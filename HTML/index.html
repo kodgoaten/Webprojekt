@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <title>Gym Helper</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../Css/css.css">
+    <link rel="stylesheet" href="../Css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
@@ -15,44 +16,111 @@
 
 <body>
 
-    <header id="title">
+    <header>
         <nav class="topnav">
             <a class="active" href="#home">GymHelper</a>
-            <a href="../HTML/contact.html">Kontaka oss</a>
-            <a id="login" href="../HTML/Login.html">Logga in</a>
+            <a href="../HTML/contact.html">Kontakta oss</a>
+            <a id="login" href="../HTML/login.html">Logga in</a>
             <a id="logged-in" class="hidden">Hej {username}</a>
         </nav>
-        <img id="dumbbell-left" src="../Images/dumbell.webp" alt="Hand håller hantel">
-        <h1 class="poetsen-one-regular">GymHelper</h1>
-        <img id="dumbbell-right" src="../Images/dumbell.webp" alt="Hand håller hantel">
     </header>
     <main>
         <section>
-            <p>GymHelper hjälper dig att hitta DITT program. </p>
+            <img class="dumbbell" src="../Images/dumbell.webp" alt="Hand håller hantel">
+            <h1 class="poetsen-one-regular">GymHelper</h1>
+            <img class="dumbbell" src="../Images/dumbell.webp" alt="Hand håller hantel">
+            <p>GymHelper hjälper dig att hitta ditt program. </p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo odit
                 labore amet dolores nisi fugiat, asperiores nulla veniam consequuntur modi accusantium quaerat optio.
                 Nemo,
                 dolores totam eius amet distinctio ut.</p>
         </section>
+        <img class="trainingpicture" src="../Images/Man1.jpg" alt="Man som tränar">
         <section>
-            <img class="trainingpicture" src="../Images/Man1.jpg" alt="Man som tränar">
+            <h2>Tryck på knappen nedan för att hitta det programmet som passar dig!</h2>
+            <button id="button">Tryck mig</button>
+            <div id="box">
+                <h3>1. Styrketräning för muskelmassa (Hypertrofi)</h3>
+                <h4>Program: Split-rutin (Upper/Lower Split)</h4>
+                <p><strong>Frekvens:</strong> 4 dagar i veckan</p>
+                <p><strong>Exempel:</strong></p>
+                <ul>
+                    <li><strong>Måndag:</strong> Överkropp (bröst, rygg, axlar, armar)
+                        <ul>
+                            <li>Bänkpress: 4x8-10</li>
+                            <li>Skivstångsrodd: 4x8-10</li>
+                            <li>Militärpress: 3x10-12</li>
+                            <li>Bicepscurl: 3x12-15</li>
+                            <li>Tricepspress: 3x12-15</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tisdag:</strong> Underkropp (ben, vader)
+                        <ul>
+                            <li>Knäböj: 4x8-10</li>
+                            <li>Marklyft: 3x8-10</li>
+                            <li>Benpress: 3x10-12</li>
+                            <li>Vadpress: 3x12-15</li>
+                        </ul>
+                    </li>
+                    <li><strong>Torsdag:</strong> Överkropp (varianter av tidigare övningar)</li>
+                    <li><strong>Fredag:</strong> Underkropp (varianter av tidigare övningar)</li>
+                </ul>
+                <p><strong>Fördel:</strong> Denna typ av program är idealiskt för att bygga muskelmassa eftersom det
+                    fokuserar på hypertrofi med måttliga vikter och högre repetitionsintervall. Split-rutinen ger också
+                    tillräckligt med återhämtningstid för varje muskelgrupp.</p>
+
+                <h3>2. Konditionsträning för uthållighet</h3>
+                <h4>Program: Långdistanslöpning</h4>
+                <p><strong>Frekvens:</strong> 3-5 dagar i veckan</p>
+                <p><strong>Exempel:</strong></p>
+                <ul>
+                    <li><strong>Måndag:</strong> Långt, långsamt löppass (10-15 km)</li>
+                    <li><strong>Onsdag:</strong> Intervallträning (8x400m med 200m vila mellan varje)</li>
+                    <li><strong>Fredag:</strong> Tempolöpning (5-8 km i högre hastighet)</li>
+                    <li><strong>Söndag:</strong> Återhämtningsjogg (5-7 km i lugnt tempo)</li>
+                </ul>
+                <p><strong>Fördel:</strong> Detta program är bäst för att förbättra kardiovaskulär uthållighet och
+                    långdistansprestanda. Det blandar långa, stadiga löppass med intervall- och tempoträning för att
+                    bygga både uthållighet och hastighet.</p>
+
+                <h3>3. Funktionell träning för allmän fitness och rörlighet</h3>
+                <h4>Program: CrossFit-inspirerad cirkelträning</h4>
+                <p><strong>Frekvens:</strong> 3-4 dagar i veckan</p>
+                <p><strong>Exempel:</strong></p>
+                <ul>
+                    <li><strong>Måndag:</strong> AMRAP (As Many Rounds As Possible) på 20 minuter
+                        <ul>
+                            <li>5 Pull-ups</li>
+                            <li>10 Push-ups</li>
+                            <li>15 Air Squats</li>
+                        </ul>
+                    </li>
+                    <li><strong>Onsdag:</strong> EMOM (Every Minute On the Minute) i 20 minuter
+                        <ul>
+                            <li>1 minut: 10 Kettlebell Swings</li>
+                            <li>2 minut: 15 Burpees</li>
+                        </ul>
+                    </li>
+                    <li><strong>Fredag:</strong> For Time (utför alla övningar så snabbt som möjligt)
+                        <ul>
+                            <li>21-15-9 repetitioner av:
+                                <ul>
+                                    <li>Thrusters (kombination av front squat och press)</li>
+                                    <li>Box Jumps</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><strong>Fördel:</strong> Funktionell träning är utmärkt för att förbättra allmän kondition, styrka
+                    och rörlighet. CrossFit-inspirerade cirkelträningspass är intensiva och varierade, vilket hjälper
+                    till att bygga en balanserad fysik och förbättra både styrka och kondition.</p>
+            </div>
         </section>
+        <!--Diven över är mycket text som jag har bara kopierat från chatgpt och satte i listor och rubriker-->
     </main>
     <footer>
-        <p id="p1">Tryck på knappen nedan för att hitta det programmet som passar dig!</p>
-
-        <button id="knapp">Tryck mig</button>
-        <div id="ruta" class="frågor">
-            <form>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                <label for="vehicle1"> I have a bike</label><br>
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> I have a car</label><br>
-                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                <label for="vehicle3"> I have a boat</label><br><br>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
+        <p>GymHelper®</p>
     </footer>
 </body>
 

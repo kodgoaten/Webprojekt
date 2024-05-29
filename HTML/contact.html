@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <title>Gym Helper Kontaka oss</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../Css/css.css">
+    <link rel="stylesheet" href="../Css/contact.css">
+    <script src="../JavaScript/contact.js" defer></script>
     <script src="../JavaScript/name.js" defer></script>
 </head>
 
@@ -13,34 +15,34 @@
     <header>
         <nav class="topnav">
             <a href="../HTML/index.html">GymHelper</a>
-            <a class="active" href="#contact">Kontaka oss</a>
-            <a id="login" href="../HTML/Login.html">Logga in</a>
+            <a class="active" href="#contact">Kontakta oss</a>
+            <a id="login" href="../HTML/login.html">Logga in</a>
             <a id="logged-in" class="hidden">Hej {username}</a>
         </nav>
-        <h3>Kontakta oss</h3>
     </header>
     <main>
         <section>
+            <h1 class="contactHeaders">Om Oss</h1>
             <table>
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Country</th>
+                        <th>Namn</th>
+                        <th>Ålder</th>
+                        <th>Land</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr id="row-1">
+                    <tr>
                         <td>Lukas Peters</td>
                         <td>18</td>
                         <td>Sverige</td>
                     </tr>
-                    <tr id="row-2">
+                    <tr>
                         <td>Sakul Sretep</td>
                         <td>81</td>
                         <td>Bangladesh</td>
                     </tr>
-                    <tr row="row-3">
+                    <tr>
                         <td>Peter Lukass</td>
                         <td>19</td>
                         <td>USA</td>
@@ -48,10 +50,29 @@
                 </tbody>
                 <tfoot>
                     <tr>
-
+                        <td>GymHelper</td>
+                        <td>1</td>
+                        <td>Sverige</td>
                     </tr>
                 </tfoot>
             </table>
         </section>
+        <section>
+            <h2 class="contactHeaders">Kontakta Oss</h2>
+            <form id="contactBox">
+                <input type="text" class="input-field" placeholder="Namn" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="text" class="input-field" placeholder="Ärende" required>
+                <textarea class="input-field" placeholder=" Meddelande" required></textarea>
+                <input type="submit" class="btn" value="skicka">
+            </form>
+            <p id="animatedParagraph">Tack För Ditt Meddelande</p>
+        </section>
     </main>
+    <footer>
+        <p>GymHelper®</p>
+    </footer>
 </body>
+
+
+</html>

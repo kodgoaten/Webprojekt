@@ -1,0 +1,61 @@
+h1 {
+    padding: 0px 40px;
+    padding-top: 60px;
+    font-size: 50px;
+    display: inline-block;
+}
+
+.dumbbell {
+    padding: 0px 40px;
+    width: 100px;
+    display: inline-block;
+}
+
+main {
+    text-align: center;
+}
+
+main section:nth-child(3) {
+    margin-bottom: 35px;
+}
+
+p {
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.trainingpicture {
+
+    width: 100%;
+    padding: 50px 0px;
+}
+
+#button {
+    padding: 30px 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#button:hover {
+    box-shadow: rgba(0, 0, 0, 2) 0 8px 15px;
+    cursor: pointer;
+}
+
+h2 {
+    padding-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
